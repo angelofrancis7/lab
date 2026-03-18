@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function checkvalue()
+{
+let num1=document.getElementById("num1").value;
+let num2=document.getElementById("num2").value;
+let op=document.getElementById("op").value;
+let ans;
+num1=Number(num1);
+num2=Number(num2);
+if(op=='+')
+{
+	ans=num1+num2;
+}
+else if(op=='-')
+{
+	ans=num1-num2;
+}
+else if (op=='*')
+{
+	ans=num1*num2;
+}
+else if(op=='/')
+{
+	ans=num1/num2;
+}
+document.getElementById("ans").innerHTML=ans;
+}
+</script>
+
+
+</head>
+<body>
+<h2>Simple Calculator</h2>
+ First Number:<input type="number" id="num1"><br><br>
+ Second Number: <input type="number" id="num2"><br><br>
+ Operator: <input type="text" id="op"><br><br>
+ <button onclick=checkvalue()>Calculator</button>
+<h3>Result:<span id="ans"></span></h3>
+
+</body>
+</html>
