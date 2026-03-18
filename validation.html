@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate()
+{
+	let email=document.getElementById("email").value;
+	let password=document.getElementById("pass").value;
+	let emailpattern=/\w+\.\w+/;
+	if(!emailpattern.test(email))
+	{
+		alert("please enter valid mail");
+		return false;
+	}
+	if(password.length<6)
+	{
+		alert("Enter a 6 digit password");
+		return false;
+	}
+		alert("login successful");
+		return true;
+}
+</script>
+
+
+</head>
+<body>
+Email: <input type="text" id="email"><br><br>
+password: <input type="text" id="pass"><br><br>
+<input type="button" value="submit" onclick="validate()">
+
+</body>
+</html>
