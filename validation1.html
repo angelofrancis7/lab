@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate()
+{
+	let username=document.getElementById("username").value;
+	let password=document.getElementById("pass").value;
+	if(username.trim()==="")
+	{
+		alert("Username required");
+	}
+	else if(username.trim()==="")
+	{
+	alert("password must be between 6 and 12 character long");
+	}
+	if(password.length<6&&password.length>12)
+	{
+
+		alert("login successful");
+	}
+}
+		
+
+</script>
+
+
+</head>
+<body>
+Username: <input type="text" id="username"><br><br>
+password: <input type="text" id="pass"><br><br>
+<input type="button" value="submit" onclick="validate()">
+
+</body>
+</html>
