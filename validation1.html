@@ -11,10 +11,10 @@ function validate()
 		alert("Username required");
 		return false;
 	}
-	if(password.trim()==="")
+	if(!(password.length>6&&password.length<12))
 	{
 
-		alert("password required");
+		alert("password must be between 6 and 12");
 		return false;
 	}
 	alert("login successful");
